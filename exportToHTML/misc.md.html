@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>misc.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+misc.md</font>
+</center></td></tr></table>
+<pre><span class="s0">[</span><span class="s1">HTML5 Boilerplate homepage</span><span class="s0">](https://html5boilerplate.com/) </span><span class="s1">| </span><span class="s0">[</span><span class="s1">Documentation</span>
+<span class="s1">table of contents</span><span class="s0">](</span><span class="s1">TOC.md</span><span class="s0">)</span>
+
+<span class="s2"># </span><span class="s1">Miscellaneous</span>
+
+<span class="s2">* </span><span class="s0">[</span><span class="s1">.gitignore</span><span class="s0">](</span><span class="s1">#gitignore</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s0">[</span><span class="s1">.editorconfig</span><span class="s0">](</span><span class="s1">#editorconfig</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s0">[</span><span class="s1">Server Configuration</span><span class="s0">](</span><span class="s1">#server-configuration</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s0">[</span><span class="s1">robots.txt</span><span class="s0">](</span><span class="s1">#robotstxt</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s0">[</span><span class="s1">humans.txt</span><span class="s0">](</span><span class="s1">#humanstxt</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s0">[</span><span class="s1">browserconfig.xml</span><span class="s0">](</span><span class="s1">#browserconfigxml</span><span class="s0">)</span>
+
+<span class="s1">--</span>
+
+<span class="s2">## </span><span class="s1">.gitignore</span>
+
+<span class="s1">HTML5 Boilerplate includes a basic project-level </span><span class="s3">`</span><span class="s1">.gitignore</span><span class="s3">`</span><span class="s1">. This should</span>
+<span class="s1">primarily be used to avoid certain project-level files and directories from</span>
+<span class="s1">being kept under source control. Different development-environments will</span>
+<span class="s1">benefit from different collections of ignores.</span>
+
+<span class="s1">OS-specific and editor-specific files should be ignored using a </span><span class="s0">&quot;</span><span class="s1">global</span>
+<span class="s1">ignore</span><span class="s0">&quot; </span><span class="s1">that applies to all repositories on your system.</span>
+
+<span class="s1">For example, add the following to your </span><span class="s3">`</span><span class="s0">~</span><span class="s1">/.gitconfig</span><span class="s3">`</span><span class="s1">, where the </span><span class="s3">`</span><span class="s1">.gitignore</span><span class="s3">`</span>
+<span class="s1">in your HOME directory contains the files and directories you'd like to</span>
+<span class="s1">globally ignore</span><span class="s0">:</span>
+
+<span class="s3">```gitignore</span>
+<span class="s3">[core]</span>
+    <span class="s3">excludesfile = ~/.gitignore</span>
+<span class="s3">```</span>
+
+<span class="s2">* </span><span class="s1">More on global ignores</span><span class="s0">: https://help.github.com/articles/ignoring-files/</span>
+<span class="s2">* </span><span class="s1">Comprehensive set of ignores on GitHub</span><span class="s0">: https://github.com/github/gitignore</span>
+
+
+<span class="s2">## </span><span class="s1">.editorconfig</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">file is provided in order to encourage and help you and</span>
+<span class="s1">your team define and maintain consistent coding styles between different</span>
+<span class="s1">editors and IDEs.</span>
+
+<span class="s1">By default, </span><span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">includes some basic</span>
+<span class="s0">[</span><span class="s1">properties</span><span class="s0">](https://editorconfig.org/#supported-properties) </span><span class="s1">that reflect the</span>
+<span class="s1">coding styles from the files provided by default, but you can easily change</span>
+<span class="s1">them to better suit your needs.</span>
+
+<span class="s1">In order for your editor/IDE to apply the</span>
+<span class="s0">[</span><span class="s1">properties</span><span class="s0">](https://editorconfig.org/#supported-properties) </span><span class="s1">from the</span>
+<span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">file, you may need to </span><span class="s0">[</span><span class="s1">install a</span>
+<span class="s1">plugin</span><span class="s0">]( https://editorconfig.org/#download)</span><span class="s1">.</span>
+
+<span class="s0">__</span><span class="s1">N.B.</span><span class="s0">__ </span><span class="s1">If you aren't using the server configurations provided by HTML5</span>
+<span class="s1">Boilerplate, we highly encourage you to configure your server to block</span>
+<span class="s1">access to </span><span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">files, as they can disclose sensitive information</span><span class="s0">!</span>
+
+<span class="s1">For more details, please refer to the </span><span class="s0">[</span><span class="s1">EditorConfig</span>
+<span class="s1">project</span><span class="s0">](https://editorconfig.org/)</span><span class="s1">.</span>
+
+
+<span class="s2">## </span><span class="s1">Server Configuration</span>
+
+<span class="s1">H5BP includes a </span><span class="s0">[</span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">`</span><span class="s0">](</span><span class="s1">#htaccess</span><span class="s0">) </span><span class="s1">file for the </span><span class="s0">[</span><span class="s1">Apache HTTP</span>
+<span class="s1">server</span><span class="s0">](https://httpd.apache.org/docs/)</span><span class="s1">. If you are not using Apache</span>
+<span class="s1">as your web server, then you are encouraged to download a</span>
+<span class="s0">[</span><span class="s1">server configuration</span><span class="s0">](https://github.com/h5bp/server-configs) </span><span class="s1">that</span>
+<span class="s1">corresponds to your web server and environment.</span>
+
+<span class="s1">A </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s0">(</span><span class="s1">hypertext access</span><span class="s0">) </span><span class="s1">file is an </span><span class="s0">[</span><span class="s1">Apache HTTP server</span>
+<span class="s1">configuration file</span><span class="s0">](https://github.com/h5bp/server-configs-apache)</span><span class="s1">.</span>
+<span class="s1">The </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">file is mostly used for</span><span class="s0">:</span>
+
+<span class="s2">* </span><span class="s1">Rewriting URLs</span>
+<span class="s2">* </span><span class="s1">Controlling cache</span>
+<span class="s2">* </span><span class="s1">Authentication</span>
+<span class="s2">* </span><span class="s1">Server-side includes</span>
+<span class="s2">* </span><span class="s1">Redirects</span>
+<span class="s2">* </span><span class="s1">Gzipping</span>
+
+<span class="s1">If you have access to the main server configuration file </span><span class="s0">(</span><span class="s1">usually called</span>
+<span class="s3">`</span><span class="s1">httpd.conf</span><span class="s3">`</span><span class="s0">)</span><span class="s1">, you should add the logic from the </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">file in, for</span>
+<span class="s1">example, a &lt;Directory&gt; section in the main configuration file. This is usually</span>
+<span class="s1">the recommended way, as using .htaccess files slows down Apache</span><span class="s0">!</span>
+
+<span class="s1">To enable Apache modules locally, please see</span><span class="s0">:</span>
+<span class="s0">https://github.com/h5bp/server-configs-apache#enable-apache-httpd-modules</span><span class="s1">.</span>
+
+<span class="s1">In the repo the </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">is used for</span><span class="s0">:</span>
+
+<span class="s2">* </span><span class="s1">Allowing cross-origin access to web fonts</span>
+<span class="s2">* </span><span class="s1">CORS header for images when browsers request it</span>
+<span class="s2">* </span><span class="s1">Enable </span><span class="s3">`</span><span class="s1">404.html</span><span class="s3">` </span><span class="s1">as 404 error document</span>
+<span class="s2">* </span><span class="s1">Making the website experience better for IE users better</span>
+<span class="s2">* </span><span class="s1">Media UTF-8 as character encoding for </span><span class="s3">`</span><span class="s1">text/html</span><span class="s3">` </span><span class="s1">and </span><span class="s3">`</span><span class="s1">text/plain</span><span class="s3">`</span>
+<span class="s2">* </span><span class="s1">Enabling the rewrite URLs engine</span>
+<span class="s2">* </span><span class="s1">Forcing or removing the </span><span class="s3">`</span><span class="s1">www.</span><span class="s3">` </span><span class="s1">at the begin of a URL</span>
+<span class="s2">* </span><span class="s1">It blocks access to directories without a default document</span>
+<span class="s2">* </span><span class="s1">It blocks access to files that can expose sensitive information.</span>
+<span class="s2">* </span><span class="s1">It reduces MIME type security risks</span>
+<span class="s2">* </span><span class="s1">It forces compressing </span><span class="s0">(</span><span class="s1">gzipping</span><span class="s0">)</span>
+<span class="s2">* </span><span class="s1">It tells the browser whether they should request a specific file from the</span>
+  <span class="s1">server or whether they should grab it from the browser's cache</span>
+
+<span class="s1">When using </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">we recommend reading all inline comments </span><span class="s0">(</span><span class="s1">the rules after</span>
+<span class="s1">a </span><span class="s3">`</span><span class="s1">#</span><span class="s3">`</span><span class="s0">) </span><span class="s1">in the file once. There is a bunch of optional stuff in it.</span>
+
+<span class="s1">If you want to know more about the </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">file check out the</span>
+<span class="s0">[</span><span class="s1">Apache HTTP server docs</span><span class="s0">](https://httpd.apache.org/docs/) </span><span class="s1">or more</span>
+<span class="s1">specifically the </span><span class="s0">[</span><span class="s1">htaccess</span>
+<span class="s1">section</span><span class="s0">](https://httpd.apache.org/docs/current/howto/htaccess.html)</span><span class="s1">.</span>
+
+<span class="s1">Notice that the original repo for the </span><span class="s3">`</span><span class="s1">.htaccess</span><span class="s3">` </span><span class="s1">file is </span><span class="s0">[</span><span class="s1">this</span>
+<span class="s1">one</span><span class="s0">](https://github.com/h5bp/server-configs-apache)</span><span class="s1">.</span>
+
+
+<span class="s2">## </span><span class="s1">robots.txt</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">robots.txt</span><span class="s3">` </span><span class="s1">file is used to give instructions to web robots on what can</span>
+<span class="s1">be crawled from the website.</span>
+
+<span class="s1">By default, the file provided by this project includes the next two lines</span><span class="s0">:</span>
+
+ <span class="s2">* </span><span class="s3">`</span><span class="s1">User-agent</span><span class="s0">: *</span><span class="s3">` </span><span class="s1">-  the following rules apply to all web robots</span>
+ <span class="s2">* </span><span class="s3">`</span><span class="s1">Disallow</span><span class="s0">:</span><span class="s3">` </span><span class="s1">- everything on the website is allowed to be crawled</span>
+
+<span class="s1">If you want to disallow certain pages you will need to specify the path in a</span>
+<span class="s3">`</span><span class="s1">Disallow</span><span class="s3">` </span><span class="s1">directive </span><span class="s0">(</span><span class="s1">e.g.</span><span class="s0">: </span><span class="s3">`</span><span class="s1">Disallow</span><span class="s0">: </span><span class="s1">/path</span><span class="s3">`</span><span class="s0">) </span><span class="s1">or, if you want to disallow</span>
+<span class="s1">crawling of all content, use </span><span class="s3">`</span><span class="s1">Disallow</span><span class="s0">: </span><span class="s1">/</span><span class="s3">`</span><span class="s1">.</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">/robots.txt</span><span class="s3">` </span><span class="s1">file is not intended for access control, so don't try to</span>
+<span class="s1">use it as such. Think of it as a </span><span class="s0">&quot;</span><span class="s1">No Entry</span><span class="s0">&quot; </span><span class="s1">sign, rather than a locked door.</span>
+<span class="s1">URLs disallowed by the </span><span class="s3">`</span><span class="s1">robots.txt</span><span class="s3">` </span><span class="s1">file might still be indexed without being</span>
+<span class="s1">crawled, and the content from within the </span><span class="s3">`</span><span class="s1">robots.txt</span><span class="s3">` </span><span class="s1">file can be viewed by</span>
+<span class="s1">anyone, potentially disclosing the location of your private content</span><span class="s0">! </span><span class="s1">So, if</span>
+<span class="s1">you want to block access to private content, use proper authentication instead.</span>
+
+<span class="s1">For more information about </span><span class="s3">`</span><span class="s1">robots.txt</span><span class="s3">`</span><span class="s1">, please see</span><span class="s0">:</span>
+
+  <span class="s2">* </span><span class="s0">[</span><span class="s1">robotstxt.org</span><span class="s0">](https://www.robotstxt.org/)</span>
+  <span class="s2">* </span><span class="s0">[</span><span class="s1">How Google handles the </span><span class="s3">`</span><span class="s1">robots.txt</span><span class="s3">` </span><span class="s1">file</span><span class="s0">](https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt)</span>
+
+<span class="s2">## </span><span class="s1">humans.txt</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">humans.txt</span><span class="s3">` </span><span class="s1">file is used to provide information about people involved with</span>
+<span class="s1">the website.</span>
+
+<span class="s1">The provided file contains three sections</span><span class="s0">:</span>
+
+  <span class="s2">* </span><span class="s3">`</span><span class="s1">TEAM</span><span class="s3">` </span><span class="s1">- this is intended to list the group of people responsible for the website</span>
+  <span class="s2">* </span><span class="s3">`</span><span class="s1">THANKS</span><span class="s3">` </span><span class="s1">- this is intended to list the group of people that have contributed</span>
+  <span class="s1">to the website</span>
+  <span class="s2">* </span><span class="s3">`</span><span class="s1">TECHNOLOGY COLOPHON</span><span class="s3">` </span><span class="s1">- the section lists technologies used to make the website</span>
+  
+<span class="s1">For more information about </span><span class="s3">`</span><span class="s1">humans.txt</span><span class="s3">`</span><span class="s1">, please see</span><span class="s0">: http://humanstxt.org/</span>
+
+
+<span class="s2">## </span><span class="s1">browserconfig.xml</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">browserconfig.xml</span><span class="s3">` </span><span class="s1">file is used to customize the tile displayed when users</span>
+<span class="s1">pin your site to the Windows 8.1 start screen. In there you can define custom</span>
+<span class="s1">tile colors, custom images or even </span><span class="s0">[</span><span class="s1">live tiles</span><span class="s0">](https://msdn.microsoft.com/library/dn455106.aspx#CreatingLiveTiles)</span><span class="s1">.</span>
+
+<span class="s1">By default, the file points to 2 placeholder tile images</span><span class="s0">:</span>
+
+<span class="s2">* </span><span class="s3">`</span><span class="s1">tile.png</span><span class="s3">` </span><span class="s0">(</span><span class="s1">558x558px</span><span class="s0">): </span><span class="s1">used for </span><span class="s3">`</span><span class="s1">Small</span><span class="s3">`</span><span class="s1">, </span><span class="s3">`</span><span class="s1">Medium</span><span class="s3">` </span><span class="s1">and </span><span class="s3">`</span><span class="s1">Large</span><span class="s3">` </span><span class="s1">tiles.</span>
+  <span class="s1">This image resizes automatically when necessary.</span>
+<span class="s2">* </span><span class="s3">`</span><span class="s1">tile-wide.png</span><span class="s3">` </span><span class="s0">(</span><span class="s1">558x270px</span><span class="s0">): </span><span class="s1">user for </span><span class="s3">`</span><span class="s1">Wide</span><span class="s3">` </span><span class="s1">tiles.</span>
+
+<span class="s1">Notice that IE11 uses the same images when adding a site to the </span><span class="s3">`</span><span class="s1">favorites</span><span class="s3">`</span><span class="s1">.</span>
+
+<span class="s1">For more in-depth information about the </span><span class="s3">`</span><span class="s1">browserconfig.xml</span><span class="s3">` </span><span class="s1">file, please</span>
+<span class="s1">see </span><span class="s0">[</span><span class="s1">MSDN</span><span class="s0">](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85))</span><span class="s1">.</span>
+</pre>
+</body>
+</html>

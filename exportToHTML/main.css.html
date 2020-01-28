@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>main.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #e8bf6a;}
+.s3 { color: #bababa;}
+.s4 { color: #a9b7c6;}
+.s5 { color: #6897bb;}
+.s6 { color: #cc7832;}
+.s7 { color: #a5c261;}
+.s8 { color: #6a8759;}
+.s9 { color: #cc7832; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.css</font>
+</center></td></tr></table>
+<pre><span class="s0">/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */</span>
+
+<span class="s0">/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */</span>
+<span class="s0">/* 
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, 
+ * Kroc Camen, and the H5BP dev community and team. 
+ */</span>
+
+<span class="s0">/* ========================================================================== 
+   Base styles: opinionated defaults 
+   ========================================================================== */</span>
+
+<span class="s2">html </span><span class="s1">{</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s5">62.5</span><span class="s1">%</span><span class="s6">;</span>
+  <span class="s3">box-sizing</span><span class="s4">: </span><span class="s7">border-box</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s6">*, *</span><span class="s4">::</span><span class="s2">before</span><span class="s6">, *</span><span class="s4">::</span><span class="s2">after </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">box-sizing</span><span class="s4">: </span><span class="s7">inherit</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">body </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s5">#333333</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">calculator </span><span class="s1">{</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s5">1</span><span class="s7">px solid </span><span class="s5">#ccc</span><span class="s6">;</span>
+  <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">5</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s7">silver</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s7">absolute</span><span class="s6">;</span>
+  <span class="s3">top</span><span class="s4">: </span><span class="s5">50</span><span class="s1">%</span><span class="s6">;</span>
+  <span class="s3">left</span><span class="s4">: </span><span class="s5">50</span><span class="s1">%</span><span class="s6">;</span>
+  <span class="s3">transform</span><span class="s4">: </span><span class="s2">translate</span><span class="s1">(-</span><span class="s5">50</span><span class="s1">%</span><span class="s6">, </span><span class="s1">-</span><span class="s5">50</span><span class="s1">%)</span><span class="s6">;</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s5">400</span><span class="s7">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">calculator-screen </span><span class="s1">{</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s5">100</span><span class="s1">%</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s5">5</span><span class="s7">rem</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s5">80</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s7">none</span><span class="s6">;</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s5">#252525</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#cccccc</span><span class="s6">;</span>
+  <span class="s3">text-align</span><span class="s4">: </span><span class="s7">right</span><span class="s6">;</span>
+  <span class="s3">padding-right</span><span class="s4">: </span><span class="s5">20</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">padding-left</span><span class="s4">: </span><span class="s5">10</span><span class="s7">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">button </span><span class="s1">{</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s5">60</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s5">#ffffff</span><span class="s6">;</span>
+  <span class="s3">border-radius</span><span class="s4">: </span><span class="s5">3</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s5">1</span><span class="s7">px solid </span><span class="s5">#c4c4c4</span><span class="s6">;</span>
+  <span class="s3">font-size</span><span class="s4">: </span><span class="s5">2</span><span class="s7">rem</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#333</span><span class="s6">;</span>
+  <span class="s3">background-image</span><span class="s4">: </span><span class="s2">linear-gradient</span><span class="s1">(</span><span class="s7">to bottom</span><span class="s6">,</span><span class="s7">transparent</span><span class="s6">,</span><span class="s7">transparent </span><span class="s5">50</span><span class="s1">%</span><span class="s6">,</span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">0</span><span class="s6">,</span><span class="s5">0</span><span class="s6">,</span><span class="s5">0</span><span class="s6">,</span><span class="s5">.04</span><span class="s1">))</span><span class="s6">;</span>
+  <span class="s3">box-shadow</span><span class="s4">: </span><span class="s7">inset </span><span class="s5">0 0 0 1</span><span class="s7">px </span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">.05</span><span class="s1">)</span><span class="s6">, </span><span class="s7">inset </span><span class="s5">0 1</span><span class="s7">px </span><span class="s5">0 0 </span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">.45</span><span class="s1">)</span><span class="s6">, </span><span class="s7">inset </span><span class="s5">0 </span><span class="s1">-</span><span class="s5">1</span><span class="s7">px </span><span class="s5">0 0 </span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">.15</span><span class="s1">)</span><span class="s6">, </span><span class="s5">0 1</span><span class="s7">px </span><span class="s5">0 0 </span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">.15</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">text-shadow</span><span class="s4">: </span><span class="s5">0 1</span><span class="s7">px </span><span class="s2">rgba</span><span class="s1">(</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">255</span><span class="s6">,</span><span class="s5">.4</span><span class="s1">)</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">button</span><span class="s4">:</span><span class="s2">hover </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s5">#eaeaea</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">operator </span><span class="s1">{</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#337cac</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">all-clear </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s7">dodgerblue</span><span class="s6">;</span>
+  <span class="s3">border-color</span><span class="s4">: </span><span class="s5">#b0353a</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#fff</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">all-clear</span><span class="s4">:</span><span class="s2">hover </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s7">firebrick</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">equal-sign </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s7">chocolate</span><span class="s6">;</span>
+  <span class="s3">border-color</span><span class="s4">: </span><span class="s5">#b0353a</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#fff</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s5">100</span><span class="s1">%</span><span class="s6">;</span>
+  <span class="s3">grid-area</span><span class="s4">: </span><span class="s5">2 </span><span class="s1">/ </span><span class="s5">4 </span><span class="s1">/ </span><span class="s5">6 </span><span class="s1">/ </span><span class="s5">5</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">equal-sign</span><span class="s4">:</span><span class="s2">hover </span><span class="s1">{</span>
+  <span class="s3">background-color</span><span class="s4">: </span><span class="s7">firebrick</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">calculator-keys </span><span class="s1">{</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s7">grid</span><span class="s6">;</span>
+  <span class="s3">grid-template-columns</span><span class="s4">: </span><span class="s2">repeat</span><span class="s1">(</span><span class="s5">4</span><span class="s6">, </span><span class="s5">1</span><span class="s2">fr</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">grid-gap</span><span class="s4">: </span><span class="s5">20</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s5">20</span><span class="s7">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s2">p </span><span class="s1">{</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#cccccc</span><span class="s6">;</span>
+  <span class="s3">font-family</span><span class="s4">: </span><span class="s2">Helvetica</span><span class="s6">, </span><span class="s8">&quot;Trebuchet MS&quot;</span><span class="s6">, </span><span class="s2">Verdana</span><span class="s6">, </span><span class="s7">sans-serif</span><span class="s6">;</span>
+  <span class="s3">size</span><span class="s4">: </span><span class="s5">10</span><span class="s7">rem</span><span class="s6">;</span>
+  <span class="s3">padding-top</span><span class="s4">: </span><span class="s5">20</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">padding-left</span><span class="s4">: </span><span class="s5">10</span><span class="s7">px</span><span class="s6">;</span>
+<span class="s1">}</span>
+<span class="s0">/* ========================================================================== 
+   Browser Upgrade Prompt 
+   ========================================================================== */</span>
+
+<span class="s1">.</span><span class="s2">browserupgrade </span><span class="s1">{</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s5">0.2</span><span class="s7">em </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">background</span><span class="s4">: </span><span class="s5">#ccc</span><span class="s6">;</span>
+  <span class="s3">color</span><span class="s4">: </span><span class="s5">#000</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s5">0.2</span><span class="s7">em </span><span class="s5">0</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Author's custom styles 
+   ========================================================================== */</span>
+
+<span class="s0">/* ========================================================================== 
+   Helper classes 
+   ========================================================================== */</span>
+
+<span class="s0">/* 
+ * Hide visually and from screen readers 
+ */</span>
+
+<span class="s1">.</span><span class="s2">hidden </span><span class="s1">{</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s7">none </span><span class="s9">!important</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+* Hide only visually, but have it available for screen readers: 
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility 
+* 
+* 1. For long content, line feeds are not interpreted as spaces and small width 
+*    causes content to wrap 1 word per line: 
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe 
+*/</span>
+
+<span class="s1">.</span><span class="s2">sr-only </span><span class="s1">{</span>
+  <span class="s3">border</span><span class="s4">: </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">clip</span><span class="s4">: </span><span class="s2">rect</span><span class="s1">(</span><span class="s5">0</span><span class="s6">, </span><span class="s5">0</span><span class="s6">, </span><span class="s5">0</span><span class="s6">, </span><span class="s5">0</span><span class="s1">)</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s5">1</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s1">-</span><span class="s5">1</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s7">hidden</span><span class="s6">;</span>
+  <span class="s3">padding</span><span class="s4">: </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s7">absolute</span><span class="s6">;</span>
+  <span class="s3">white-space</span><span class="s4">: </span><span class="s7">nowrap</span><span class="s6">;</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s5">1</span><span class="s7">px</span><span class="s6">;</span>
+  <span class="s0">/* 1 */</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+* Extends the .sr-only class to allow the element 
+* to be focusable when navigated to via the keyboard: 
+* https://www.drupal.org/node/897638 
+*/</span>
+
+<span class="s1">.</span><span class="s2">sr-only</span><span class="s1">.</span><span class="s2">focusable</span><span class="s4">:</span><span class="s2">active</span><span class="s6">,</span>
+<span class="s1">.</span><span class="s2">sr-only</span><span class="s1">.</span><span class="s2">focusable</span><span class="s4">:</span><span class="s2">focus </span><span class="s1">{</span>
+  <span class="s3">clip</span><span class="s4">: </span><span class="s7">auto</span><span class="s6">;</span>
+  <span class="s3">height</span><span class="s4">: </span><span class="s7">auto</span><span class="s6">;</span>
+  <span class="s3">margin</span><span class="s4">: </span><span class="s5">0</span><span class="s6">;</span>
+  <span class="s3">overflow</span><span class="s4">: </span><span class="s7">visible</span><span class="s6">;</span>
+  <span class="s3">position</span><span class="s4">: </span><span class="s7">static</span><span class="s6">;</span>
+  <span class="s3">white-space</span><span class="s4">: </span><span class="s7">inherit</span><span class="s6">;</span>
+  <span class="s3">width</span><span class="s4">: </span><span class="s7">auto</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+* Hide visually and from screen readers, but maintain layout 
+*/</span>
+
+<span class="s1">.</span><span class="s2">invisible </span><span class="s1">{</span>
+  <span class="s3">visibility</span><span class="s4">: </span><span class="s7">hidden</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* 
+* Clearfix: contain floats 
+* 
+* For modern browsers 
+* 1. The space content is one way to avoid an Opera bug when the 
+*    `contenteditable` attribute is included anywhere else in the document. 
+*    Otherwise it causes space to appear at the top and bottom of elements 
+*    that receive the `clearfix` class. 
+* 2. The use of `table` rather than `block` is only necessary if using 
+*    `:before` to contain the top-margins of child elements. 
+*/</span>
+
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">:</span><span class="s2">before</span><span class="s6">,</span>
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+  <span class="s3">content</span><span class="s4">: </span><span class="s8">&quot; &quot;</span><span class="s6">;</span>
+  <span class="s0">/* 1 */</span>
+  <span class="s3">display</span><span class="s4">: </span><span class="s7">table</span><span class="s6">;</span>
+  <span class="s0">/* 2 */</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s2">clearfix</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+  <span class="s3">clear</span><span class="s4">: </span><span class="s7">both</span><span class="s6">;</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   EXAMPLE Media Queries for Responsive Design. 
+   These examples override the primary ('mobile first') styles. 
+   Modify as content requires. 
+   ========================================================================== */</span>
+
+<span class="s6">@media </span><span class="s2">only </span><span class="s7">screen </span><span class="s2">and </span><span class="s1">(</span><span class="s3">min-width</span><span class="s4">: </span><span class="s5">35</span><span class="s7">em</span><span class="s1">) {</span>
+  <span class="s0">/* Style adjustments for viewports that meet the condition */</span>
+<span class="s1">}</span>
+
+<span class="s6">@media </span><span class="s2">print</span><span class="s6">,</span>
+  <span class="s1">(</span><span class="s3">-webkit-min-device-pixel-ratio</span><span class="s4">: </span><span class="s5">1.25</span><span class="s1">)</span><span class="s6">,</span>
+  <span class="s1">(</span><span class="s2">min-resolution</span><span class="s4">: </span><span class="s5">1.25</span><span class="s2">dppx</span><span class="s1">)</span><span class="s6">,</span>
+  <span class="s1">(</span><span class="s2">min-resolution</span><span class="s4">: </span><span class="s5">120</span><span class="s2">dpi</span><span class="s1">) {</span>
+  <span class="s0">/* Style adjustments for high resolution devices */</span>
+<span class="s1">}</span>
+
+<span class="s0">/* ========================================================================== 
+   Print styles. 
+   Inlined to avoid the additional HTTP request: 
+   https://www.phpied.com/delay-loading-your-print-css/ 
+   ========================================================================== */</span>
+
+<span class="s6">@media </span><span class="s2">print </span><span class="s1">{</span>
+  <span class="s6">*,</span>
+  <span class="s6">*</span><span class="s4">:</span><span class="s2">before</span><span class="s6">,</span>
+  <span class="s6">*</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">background</span><span class="s4">: </span><span class="s7">transparent </span><span class="s9">!important</span><span class="s6">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s5">#000 </span><span class="s9">!important</span><span class="s6">;</span>
+    <span class="s0">/* Black prints faster */</span>
+    <span class="s3">box-shadow</span><span class="s4">: </span><span class="s7">none </span><span class="s9">!important</span><span class="s6">;</span>
+    <span class="s3">text-shadow</span><span class="s4">: </span><span class="s7">none </span><span class="s9">!important</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">a</span><span class="s6">,</span>
+  <span class="s2">a</span><span class="s4">:</span><span class="s2">visited </span><span class="s1">{</span>
+    <span class="s3">text-decoration</span><span class="s4">: </span><span class="s7">underline</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href</span><span class="s1">]</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s8">&quot; (&quot; </span><span class="s2">attr</span><span class="s1">(</span><span class="s2">href</span><span class="s1">) </span><span class="s8">&quot;)&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">abbr</span><span class="s1">[</span><span class="s2">title</span><span class="s1">]</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s8">&quot; (&quot; </span><span class="s2">attr</span><span class="s1">(</span><span class="s2">title</span><span class="s1">) </span><span class="s8">&quot;)&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s0">/* 
+     * Don't show links that are fragment identifiers, 
+     * or use the `javascript:` pseudo protocol 
+     */</span>
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href</span><span class="s1">^=</span><span class="s8">&quot;#&quot;</span><span class="s1">]</span><span class="s4">:</span><span class="s2">after</span><span class="s6">,</span>
+  <span class="s2">a</span><span class="s1">[</span><span class="s2">href</span><span class="s1">^=</span><span class="s8">&quot;javascript:&quot;</span><span class="s1">]</span><span class="s4">:</span><span class="s2">after </span><span class="s1">{</span>
+    <span class="s3">content</span><span class="s4">: </span><span class="s8">&quot;&quot;</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">pre </span><span class="s1">{</span>
+    <span class="s3">white-space</span><span class="s4">: </span><span class="s7">pre-wrap </span><span class="s9">!important</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">pre</span><span class="s6">,</span>
+  <span class="s2">blockquote </span><span class="s1">{</span>
+    <span class="s3">border</span><span class="s4">: </span><span class="s5">1</span><span class="s7">px solid </span><span class="s5">#999</span><span class="s6">;</span>
+    <span class="s3">page-break-inside</span><span class="s4">: </span><span class="s7">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s0">/* 
+     * Printing Tables: 
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables 
+     */</span>
+  <span class="s2">thead </span><span class="s1">{</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s7">table-header-group</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">tr</span><span class="s6">,</span>
+  <span class="s2">img </span><span class="s1">{</span>
+    <span class="s3">page-break-inside</span><span class="s4">: </span><span class="s7">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">p</span><span class="s6">,</span>
+  <span class="s2">h2</span><span class="s6">,</span>
+  <span class="s2">h3 </span><span class="s1">{</span>
+    <span class="s3">orphans</span><span class="s4">: </span><span class="s5">3</span><span class="s6">;</span>
+    <span class="s3">widows</span><span class="s4">: </span><span class="s5">3</span><span class="s6">;</span>
+  <span class="s1">}</span>
+  <span class="s2">h2</span><span class="s6">,</span>
+  <span class="s2">h3 </span><span class="s1">{</span>
+    <span class="s3">page-break-after</span><span class="s4">: </span><span class="s7">avoid</span><span class="s6">;</span>
+  <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>

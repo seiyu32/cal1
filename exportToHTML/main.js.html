@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>main.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.js</font>
+</center></td></tr></table>
+<pre><span class="s0">const </span><span class="s1">calculator = {</span>
+  <span class="s1">displayValue: </span><span class="s2">'0'</span><span class="s0">,</span>
+  <span class="s1">firstOperand: </span><span class="s0">null,</span>
+  <span class="s1">waitingForSecondOperand: </span><span class="s0">false,</span>
+  <span class="s1">operator: </span><span class="s0">null,</span>
+<span class="s1">}</span><span class="s0">;</span>
+
+<span class="s0">function </span><span class="s1">inputDigit(digit) {</span>
+    <span class="s0">const </span><span class="s1">{ displayValue</span><span class="s0">, </span><span class="s1">waitingForSecondOperand } = calculator</span><span class="s0">;</span>
+
+    <span class="s0">if </span><span class="s1">(waitingForSecondOperand === </span><span class="s0">true</span><span class="s1">) {</span>
+      <span class="s1">calculator.displayValue = digit</span><span class="s0">;</span>
+      <span class="s1">calculator.waitingForSecondOperand = </span><span class="s0">false;</span>
+    <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+      <span class="s1">calculator.displayValue = displayValue === </span><span class="s2">'0' </span><span class="s1">? digit : displayValue + digit</span><span class="s0">;</span>
+    <span class="s1">}</span>
+  <span class="s1">}</span>
+
+  <span class="s0">function </span><span class="s1">inputDecimal(dot) {</span>
+    <span class="s0">if </span><span class="s1">(calculator.waitingForSecondOperand === </span><span class="s0">true</span><span class="s1">) </span><span class="s0">return;</span>
+
+    <span class="s3">// If the `displayValue` does not contain a decimal point</span>
+    <span class="s0">if </span><span class="s1">(!calculator.displayValue.includes(dot)) {</span>
+      <span class="s3">// Append the decimal point</span>
+      <span class="s1">calculator.displayValue += dot</span><span class="s0">;</span>
+    <span class="s1">}</span>
+  <span class="s1">}</span>
+
+  <span class="s0">function </span><span class="s1">handleOperator(nextOperator) {</span>
+    <span class="s0">const </span><span class="s1">{ firstOperand</span><span class="s0">, </span><span class="s1">displayValue</span><span class="s0">, </span><span class="s1">operator } = calculator</span><span class="s0">;</span>
+    <span class="s0">const </span><span class="s1">inputValue = parseFloat(displayValue)</span><span class="s0">;</span>
+
+    <span class="s0">if </span><span class="s1">(operator &amp;&amp; calculator.waitingForSecondOperand)  {</span>
+      <span class="s1">calculator.operator = nextOperator</span><span class="s0">;</span>
+      <span class="s0">return;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">if </span><span class="s1">(firstOperand == </span><span class="s0">null</span><span class="s1">) {</span>
+      <span class="s1">calculator.firstOperand = inputValue</span><span class="s0">;</span>
+    <span class="s1">} </span><span class="s0">else if </span><span class="s1">(operator) {</span>
+      <span class="s0">const </span><span class="s1">currentValue = firstOperand || </span><span class="s4">0</span><span class="s0">;</span>
+      <span class="s0">const </span><span class="s1">result = performCalculation[operator](currentValue</span><span class="s0">, </span><span class="s1">inputValue)</span><span class="s0">;</span>
+
+      <span class="s1">calculator.displayValue = String(result)</span><span class="s0">;</span>
+      <span class="s1">calculator.firstOperand = result</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">calculator.waitingForSecondOperand = </span><span class="s0">true;</span>
+    <span class="s1">calculator.operator = nextOperator</span><span class="s0">;</span>
+  <span class="s1">}</span>
+
+  <span class="s0">const </span><span class="s1">performCalculation = {</span>
+    <span class="s2">'/'</span><span class="s1">: (firstOperand</span><span class="s0">, </span><span class="s1">secondOperand) =&gt; firstOperand / secondOperand</span><span class="s0">,</span>
+
+    <span class="s2">'*'</span><span class="s1">: (firstOperand</span><span class="s0">, </span><span class="s1">secondOperand) =&gt; firstOperand * secondOperand</span><span class="s0">,</span>
+
+    <span class="s2">'+'</span><span class="s1">: (firstOperand</span><span class="s0">, </span><span class="s1">secondOperand) =&gt; firstOperand + secondOperand</span><span class="s0">,</span>
+
+    <span class="s2">'-'</span><span class="s1">: (firstOperand</span><span class="s0">, </span><span class="s1">secondOperand) =&gt; firstOperand - secondOperand</span><span class="s0">,</span>
+
+    <span class="s2">'='</span><span class="s1">: (firstOperand</span><span class="s0">, </span><span class="s1">secondOperand) =&gt; secondOperand</span>
+  <span class="s1">}</span><span class="s0">;</span>
+
+  <span class="s0">function </span><span class="s1">resetCalculator() {</span>
+    <span class="s1">calculator.displayValue = </span><span class="s2">'0'</span><span class="s0">;</span>
+    <span class="s1">calculator.firstOperand = </span><span class="s0">null;</span>
+    <span class="s1">calculator.waitingForSecondOperand = </span><span class="s0">false;</span>
+    <span class="s1">calculator.operator = </span><span class="s0">null;</span>
+  <span class="s1">}</span>
+
+  <span class="s0">function </span><span class="s1">updateDisplay() {</span>
+    <span class="s0">const </span><span class="s1">display = document.querySelector(</span><span class="s2">'.calculator-screen'</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">display.value = calculator.displayValue</span><span class="s0">;</span>
+  <span class="s1">}</span>
+
+  <span class="s1">updateDisplay()</span><span class="s0">;</span>
+
+  <span class="s0">const </span><span class="s1">keys = document.querySelector(</span><span class="s2">'.calculator-keys'</span><span class="s1">)</span><span class="s0">;</span>
+  <span class="s1">keys.addEventListener(</span><span class="s2">'click'</span><span class="s0">, </span><span class="s1">(event) =&gt; {</span>
+    <span class="s0">const </span><span class="s1">{ target } = event</span><span class="s0">;</span>
+    <span class="s0">if </span><span class="s1">(!target.matches(</span><span class="s2">'button'</span><span class="s1">)) {</span>
+      <span class="s0">return;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">if </span><span class="s1">(target.classList.contains(</span><span class="s2">'operator'</span><span class="s1">)) {</span>
+      <span class="s1">handleOperator(target.value)</span><span class="s0">;</span>
+      <span class="s1">updateDisplay()</span><span class="s0">;</span>
+      <span class="s0">return;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">if </span><span class="s1">(target.classList.contains(</span><span class="s2">'decimal'</span><span class="s1">)) {</span>
+      <span class="s1">inputDecimal(target.value)</span><span class="s0">;</span>
+      <span class="s1">updateDisplay()</span><span class="s0">;</span>
+      <span class="s0">return;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">if </span><span class="s1">(target.classList.contains(</span><span class="s2">'all-clear'</span><span class="s1">)) {</span>
+      <span class="s1">resetCalculator()</span><span class="s0">;</span>
+      <span class="s1">updateDisplay()</span><span class="s0">;</span>
+      <span class="s0">return;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">inputDigit(target.value)</span><span class="s0">;</span>
+    <span class="s1">updateDisplay()</span><span class="s0">;</span>
+  <span class="s1">})</span><span class="s0">;</span>
+
+
+</pre>
+</body>
+</html>

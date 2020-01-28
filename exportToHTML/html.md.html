@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>html.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+html.md</font>
+</center></td></tr></table>
+<pre><span class="s0">[</span><span class="s1">HTML5 Boilerplate homepage</span><span class="s0">](https://html5boilerplate.com/) </span><span class="s1">| </span><span class="s0">[</span><span class="s1">Documentation</span>
+<span class="s1">table of contents</span><span class="s0">](</span><span class="s1">TOC.md</span><span class="s0">)</span>
+
+<span class="s2"># </span><span class="s1">The HTML</span>
+
+<span class="s1">By default, HTML5 Boilerplate provides two </span><span class="s3">`</span><span class="s1">html</span><span class="s3">` </span><span class="s1">pages</span><span class="s0">:</span>
+
+<span class="s2">* </span><span class="s0">[</span><span class="s3">`</span><span class="s1">index.html</span><span class="s3">`</span><span class="s0">](</span><span class="s1">#indexhtml</span><span class="s0">) </span><span class="s1">- a default HTML skeleton that should form the</span>
+  <span class="s1">basis of all pages on your website</span>
+<span class="s2">* </span><span class="s3">`</span><span class="s1">404.html</span><span class="s3">` </span><span class="s1">- a placeholder 404 error page</span>
+
+
+<span class="s2">## </span><span class="s3">`</span><span class="s1">index.html</span><span class="s3">`</span>
+
+
+<span class="s2">### </span><span class="s1">The </span><span class="s3">`</span><span class="s1">no-js</span><span class="s3">` </span><span class="s1">Class</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">no-js</span><span class="s3">` </span><span class="s1">class is provided in order to allow you to more easily and</span>
+<span class="s1">explicitly add custom styles based on whether JavaScript is disabled</span>
+<span class="s0">(</span><span class="s3">`</span><span class="s1">.no-js</span><span class="s3">`</span><span class="s0">) </span><span class="s1">or enabled </span><span class="s0">(</span><span class="s3">`</span><span class="s1">.js</span><span class="s3">`</span><span class="s0">)</span><span class="s1">. Using this technique also helps </span><span class="s0">[</span><span class="s1">avoid the</span>
+<span class="s1">FOUC</span><span class="s0">](https://www.paulirish.com/2009/avoiding-the-fouc-v3/)</span><span class="s1">.</span>
+
+
+<span class="s2">## </span><span class="s1">Language Attribute</span>
+
+<span class="s1">Please consider specifying the language of your content by adding a </span><span class="s0">[</span><span class="s1">value</span><span class="s0">](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) </span><span class="s1">to the </span><span class="s3">`</span><span class="s1">lang</span><span class="s3">`</span>
+<span class="s1">attribute in the </span><span class="s3">`</span><span class="s1">&lt;html&gt;</span><span class="s3">` </span><span class="s1">as in this example</span><span class="s0">:</span>
+
+<span class="s3">```html</span>
+<span class="s3">&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;</span>
+<span class="s3">```</span>
+
+<span class="s2">### </span><span class="s1">The order of the </span><span class="s3">`</span><span class="s1">&lt;title&gt;</span><span class="s3">` </span><span class="s1">and </span><span class="s3">`</span><span class="s1">&lt;meta&gt;</span><span class="s3">` </span><span class="s1">tags</span>
+
+<span class="s1">The charset declaration </span><span class="s0">(</span><span class="s3">`</span><span class="s1">&lt;meta charset=&quot;utf-8&quot;&gt;</span><span class="s3">`</span><span class="s0">) </span><span class="s1">must be included completely </span>
+<span class="s1">within the </span><span class="s0">[</span><span class="s1">first 1024 bytes of the document</span><span class="s0">](https://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset)</span>
+<span class="s1">and should be specified as early as possible </span><span class="s0">(</span><span class="s1">before any content that could</span>
+<span class="s1">be controlled by an attacker, such as a </span><span class="s3">`</span><span class="s1">&lt;title&gt;</span><span class="s3">` </span><span class="s1">element</span><span class="s0">) </span><span class="s1">in order to avoid a </span>
+<span class="s1">potential </span><span class="s0">[</span><span class="s1">encoding-related security issue</span><span class="s0">](https://code.google.com/archive/p/doctype-mirror/wikis/ArticleUtf7.wiki)</span>
+<span class="s1">in Internet Explorer</span>
+
+<span class="s2">## </span><span class="s1">Meta Description</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">description</span><span class="s3">` </span><span class="s1">meta tag provides a short description of the page. </span>
+<span class="s1">In some situations this description is used as a part of the snippet </span>
+<span class="s1">shown in the search results.</span>
+
+<span class="s3">```html</span>
+<span class="s3">&lt;meta name=&quot;description&quot; content=&quot;This is a description&quot;&gt;</span>
+<span class="s3">```</span>
+
+<span class="s1">Google's </span><span class="s0">[</span><span class="s1">Create good meta descriptions</span><span class="s0">](https://support.google.com/webmasters/answer/35624?hl=en#meta-descriptions)</span>
+<span class="s1">documentation has useful tips on creating an effective description.</span>
+
+<span class="s2">## </span><span class="s1">Mobile Viewport</span>
+
+<span class="s1">There are a few different options that you can use with the </span><span class="s0">[</span><span class="s3">`</span><span class="s1">viewport</span><span class="s3">` </span><span class="s1">meta</span>
+<span class="s1">tag</span><span class="s0">](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 &quot;</span><span class="s1">Viewport and</span>
+<span class="s1">Media Queries - The Complete Idiot's Guide</span><span class="s0">&quot;)</span><span class="s1">. You can find out more in </span><span class="s0">[</span><span class="s1">the</span>
+<span class="s1">MDN Web Docs</span><span class="s0">](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)</span><span class="s1">.</span>
+<span class="s1">HTML5 Boilerplate comes with a simple setup that strikes a good balance for general use cases.</span>
+
+<span class="s3">```html</span>
+<span class="s3">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</span>
+<span class="s3">```</span>
+
+<span class="s1">If you want to take advantage of edge-to-edge displays of iPhone X/XS/XR you can do</span>
+<span class="s1">so with additional viewport parameters. </span><span class="s0">[</span><span class="s1">Check the WebKit blog</span><span class="s0">](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) </span>
+<span class="s1">for details.</span>
+
+<span class="s2">## </span><span class="s1">Web App Manifest</span>
+
+<span class="s1">HTML5 Boilerplate includes a simple web app manifest file. </span>
+
+<span class="s1">The web app manifest is a simple JSON file that allows you to control how your </span>
+<span class="s1">app appears on a device's home screen, what it looks like when it launches</span>
+<span class="s1">in that context and what happens when it is launched. This allows for much greater</span>
+<span class="s1">control over the UI of a saved site or web app on a mobile device. </span>
+
+<span class="s1">It's linked to from the HTML as follows</span><span class="s0">:</span>
+
+<span class="s3">```html</span>
+<span class="s3">&lt;link rel=&quot;manifest&quot; href=&quot;site.webmanifest&quot;&gt;</span>
+<span class="s3">```</span>
+<span class="s1">Our </span><span class="s0">[</span><span class="s1">site.webmanifest</span><span class="s0">](https://github.com/h5bp/html5-boilerplate/blob/master/src/site.webmanifest) </span><span class="s1">contains a very skeletal </span><span class="s0">&quot;</span><span class="s1">app</span><span class="s0">&quot; </span><span class="s1">definition, just to show the basic usage. </span>
+<span class="s1">You should fill this file out with </span><span class="s0">[</span><span class="s1">more information about your site or application</span><span class="s0">](https://developer.mozilla.org/en-US/docs/Web/Manifest)</span>
+
+<span class="s2">## </span><span class="s1">Favicons and Touch Icon</span>
+
+<span class="s1">The shortcut icons should be put in the root directory of your site. </span><span class="s3">`</span><span class="s1">favicon.ico</span><span class="s3">` </span>
+<span class="s1">is automatically picked up by browsers if it's placed in the root.  HTML5</span>
+<span class="s1">Boilerplate comes with a default set of icons </span><span class="s0">(</span><span class="s1">include favicon and one Apple</span>
+<span class="s1">Touch Icon</span><span class="s0">) </span><span class="s1">that you can use as a baseline to create your own.</span>
+
+<span class="s1">Please refer to the more detailed description in the </span><span class="s0">[</span><span class="s1">Extend section</span><span class="s0">](</span><span class="s1">extend.md</span><span class="s0">)</span>
+<span class="s1">of these docs.</span>
+
+<span class="s2">## </span><span class="s1">The Content Area</span>
+
+<span class="s1">The central part of the boilerplate template is pretty much empty. This is</span>
+<span class="s1">intentional, in order to make the boilerplate suitable for both web page and</span>
+<span class="s1">web app development.</span>
+
+<span class="s2">### </span><span class="s1">Browser Upgrade Prompt</span>
+
+<span class="s1">The main content area of the boilerplate includes a prompt to install an up to</span>
+<span class="s1">date browser for users of IE 9 and lower. If you intended to support IE, then you</span>
+<span class="s1">should edit or remove the snippet of code.</span>
+
+<span class="s2">## </span><span class="s1">Modernizr</span>
+
+<span class="s1">HTML5 Boilerplate uses a custom build of Modernizr.</span>
+
+<span class="s0">[</span><span class="s1">Modernizr</span><span class="s0">](https://modernizr.com/) </span><span class="s1">is a JavaScript library which adds classes to</span>
+<span class="s1">the </span><span class="s3">`</span><span class="s1">html</span><span class="s3">` </span><span class="s1">element based on the results of feature test and which ensures that</span>
+<span class="s1">all browsers can make use of HTML5 elements </span><span class="s0">(</span><span class="s1">as it includes the HTML5 Shiv</span><span class="s0">)</span><span class="s1">.</span>
+<span class="s1">This allows you to target parts of your CSS and JavaScript based on the</span>
+<span class="s1">features supported by a browser.</span>
+
+<span class="s1">Starting with version 3 Modernizr can be customized using the </span><span class="s0">[</span><span class="s1">modernizr-config.json</span><span class="s0">](https://github.com/h5bp/html5-boilerplate/blob/master/modernizr-config.json) </span><span class="s1">and the</span>
+<span class="s0">[</span><span class="s1">Modernizr command line utility</span><span class="s0">](https://www.npmjs.com/package/modernizr-cli)</span><span class="s1">. </span>
+
+<span class="s2">## </span><span class="s1">What About Polyfills?</span>
+
+<span class="s1">If you need to include </span><span class="s0">[</span><span class="s1">polyfills</span><span class="s0">](https://remysharp.com/2010/10/08/what-is-a-polyfill)</span>
+<span class="s1">in your project, you must make sure those load before any other JavaScript. If you're</span>
+<span class="s1">using a polyfill CDN service, like </span><span class="s0">[</span><span class="s1">cdn.polyfill.io</span><span class="s0">](https://cdn.polyfill.io/)</span><span class="s1">,</span>
+<span class="s1">just put it before the other scripts in the bottom of the page</span><span class="s0">:</span>
+
+<span class="s3">```html</span>
+    <span class="s3">&lt;script src=&quot;js/vendor/modernizr-3.8.0.min.js&quot;&gt;&lt;/script&gt;</span>
+    <span class="s3">&lt;script src=&quot;https://cdn.polyfill.io/v3/polyfill.min.js&quot;&gt;&lt;/script&gt;</span>
+    <span class="s3">&lt;script src=&quot;https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity=&quot;sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</span>
+    <span class="s3">&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;js/vendor/jquery-3.4.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;</span>
+    <span class="s3">&lt;script src=&quot;js/plugins.js&quot;&gt;&lt;/script&gt;</span>
+    <span class="s3">&lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;</span>
+<span class="s3">&lt;/body&gt;</span>
+<span class="s3">```</span>
+
+<span class="s1">If you like to just include the polyfills yourself, you could include them in</span>
+<span class="s3">`</span><span class="s1">js/plugins.js</span><span class="s3">`</span><span class="s1">. When you have a bunch of polyfills to load in, you could</span>
+<span class="s1">also create a </span><span class="s3">`</span><span class="s1">polyfills.js</span><span class="s3">` </span><span class="s1">file in the </span><span class="s3">`</span><span class="s1">js/vendor</span><span class="s3">` </span><span class="s1">directory or include the files </span>
+<span class="s1">individually and combine them using a build tool. Always ensure that the polyfills </span>
+<span class="s1">are all loaded before any other JavaScript.</span>
+
+<span class="s1">There are some misconceptions about Modernizr and polyfills. It's important</span>
+<span class="s1">to understand that Modernizr just handles feature checking, not polyfilling</span>
+<span class="s1">itself. The only thing Modernizr does regarding polyfills is that the team</span>
+<span class="s1">maintains </span><span class="s0">[</span><span class="s1">a huge list of cross Browser polyfills</span><span class="s0">](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)</span><span class="s1">.</span>
+
+<span class="s2">### </span><span class="s1">jQuery CDN for jQuery</span>
+
+<span class="s1">The jQuery CDN version of the jQuery JavaScript library is referenced towards</span>
+<span class="s1">the bottom of the page. A local fallback of jQuery is included for rare instances</span>
+<span class="s1">when the CDN version might not be available, and to facilitate offline</span>
+<span class="s1">development.</span>
+
+<span class="s1">The jQuery CDN version was chosen over other potential candidates</span>
+<span class="s0">([</span><span class="s1">like Google's Hosted Libraries</span><span class="s0">](https://developers.google.com/speed/libraries/))</span>
+<span class="s1">because it's fast </span><span class="s0">([</span><span class="s1">comparable or faster than Google by some</span>
+<span class="s1">measures</span><span class="s0">](https://www.cdnperf.com/#jsdelivr,cdnjs,google,yandex,microsoft,jquery,bootstrapcdn/https/90))</span>
+<span class="s1">and, </span><span class="s0">(</span><span class="s1">unlike Google's CDN</span><span class="s0">) </span><span class="s1">is available to China's hundreds of millions of internet users.</span>
+<span class="s1">For many years we </span><span class="s0">[</span><span class="s1">chose</span><span class="s0">](https://github.com/h5bp/html5-boilerplate/issues/1191)</span>
+<span class="s1">the Google Hosted version over the jQuery CDN because it was available</span>
+<span class="s1">over HTTPS </span><span class="s0">(</span><span class="s1">the jQuery CDN was not,</span><span class="s0">) </span><span class="s1">and it offered a better chance of</span>
+<span class="s1">hitting the cache lottery owing to the popularity of the Google CDN.</span>
+<span class="s1">The first issue is no longer valid and the second is far outweighed by</span>
+<span class="s1">being able to serve jQuery to users in China.</span>
+
+<span class="s1">While the jQuery CDN is a strong default solution your site or application may</span>
+<span class="s1">require a different configuration. Testing your site with services like</span>
+<span class="s0">[</span><span class="s1">WebPageTest</span><span class="s0">](https://www.webpagetest.org/) </span><span class="s1">and browser tools like</span>
+<span class="s0">[</span><span class="s1">PageSpeed Insights</span><span class="s0">](https://developers.google.com/speed/pagespeed/insights/) </span><span class="s1">will help you examine the real</span>
+<span class="s1">world performance of your site and can show where you can optimize your specific</span>
+<span class="s1">site or application.</span>
+
+<span class="s2">### </span><span class="s1">Google Universal Analytics Tracking Code</span>
+
+<span class="s1">Finally, an optimized version of the Google Universal Analytics tracking code is</span>
+<span class="s1">included.</span>
+
+<span class="s1">We use </span><span class="s3">`</span><span class="s1">analytics.js</span><span class="s3">` </span><span class="s1">rather than the newer </span><span class="s3">`</span><span class="s1">gtag.js</span><span class="s3">` </span><span class="s1">as </span>
+<span class="s0">[</span><span class="s1">it's faster and supports tasks and plugins</span><span class="s0">](https://github.com/philipwalton/analyticsjs-boilerplate/issues/19#issuecomment-333714370)</span>
+
+<span class="s1">The beacon transport mechanism is used to send all hits </span><span class="s0">[</span><span class="s1">which saves HTTP requests and improves performance</span><span class="s0">](https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/#loading-analytics.js)</span><span class="s1">.</span>
+
+<span class="s1">Google recommends that this script be placed at the top of the page.</span>
+<span class="s1">Factors to consider</span><span class="s0">: </span><span class="s1">if you place this script at the top of the page, you’ll</span>
+<span class="s1">be able to count users who don’t fully load the page, and you’ll incur the max</span>
+<span class="s1">number of simultaneous connections of the browser.</span>
+
+<span class="s1">Further information</span><span class="s0">:</span>
+
+<span class="s2">- </span><span class="s0">[</span><span class="s1">Introduction to</span>
+  <span class="s1">Analytics.js</span><span class="s0">](https://developers.google.com/analytics/devguides/collection/analyticsjs/)</span>
+<span class="s2">- </span><span class="s0">[</span><span class="s1">Google Analytics Demos &amp; Tools</span><span class="s0">](https://ga-dev-tools.appspot.com/)</span>
+
+<span class="s0">**</span><span class="s1">N.B.</span><span class="s0">** </span><span class="s1">The Google Analytics snippet is included by default mainly</span>
+<span class="s1">because Google Analytics is </span><span class="s0">[</span><span class="s1">currently one of the most popular tracking</span>
+<span class="s1">solutions</span><span class="s0">](https://trends.builtwith.com/analytics/Google-Analytics) </span><span class="s1">out there.</span>
+<span class="s1">However, its usage isn't set in stone, and you SHOULD consider exploring the</span>
+<span class="s0">[</span><span class="s1">alternatives</span><span class="s0">](https://en.wikipedia.org/wiki/List_of_web_analytics_software)</span>
+<span class="s1">and use whatever suits your needs best.</span>
+
+
+</pre>
+</body>
+</html>

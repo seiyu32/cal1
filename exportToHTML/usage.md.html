@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>usage.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+usage.md</font>
+</center></td></tr></table>
+<pre><span class="s0">[</span><span class="s1">HTML5 Boilerplate homepage</span><span class="s0">](https://html5boilerplate.com/) </span><span class="s1">| </span><span class="s0">[</span><span class="s1">Documentation</span>
+<span class="s1">table of contents</span><span class="s0">](</span><span class="s1">TOC.md</span><span class="s0">)</span>
+
+<span class="s2"># </span><span class="s1">Usage</span>
+
+<span class="s1">The most basic usage of HTML5 Boilerplate is to create a static site or simple</span>
+<span class="s1">app. Once you've downloaded or cloned the project, that process looks something</span>
+<span class="s1">like this</span><span class="s0">:</span>
+
+<span class="s2">1. </span><span class="s1">Set up the basic structure of the site.</span>
+<span class="s2">2. </span><span class="s1">Add some content, style, and functionality.</span>
+<span class="s2">3. </span><span class="s1">Run your site locally to see how it looks.</span>
+<span class="s2">4. </span><span class="s1">Deploy your site.</span>
+
+<span class="s1">Cool, right? </span><span class="s0">_</span><span class="s1">It is</span><span class="s0">_</span><span class="s1">. That said, the smart defaults, baseline elements, default</span>
+<span class="s1">attribute values and various other utilities that HTML5 Boilerplate offers can</span>
+<span class="s1">serve as the foundation for whatever you're interested in building.</span>
+
+<span class="s1">Even the basic use-case of a simple static site can be enhanced by manipulating</span>
+<span class="s1">the code through an automated build process. Moving up in complexity HTML5</span>
+<span class="s1">Boilerplate can be integrated with whatever front-end framework, CMS or</span>
+<span class="s1">e-commerce platform you're working with. Mix-and-match to your heart's content.</span>
+<span class="s1">Use what you need </span><span class="s0">(</span><span class="s1">toss it in a blender if you need to</span><span class="s0">) </span><span class="s1">and discard the rest.</span>
+<span class="s1">HTML5 Boilerplate is a starting point, not a destination.</span>
+
+<span class="s2">## </span><span class="s1">Basic structure</span>
+
+<span class="s1">A basic HTML5 Boilerplate site initially looks something like this</span><span class="s0">:</span>
+
+<span class="s3">```</span>
+<span class="s3">.</span>
+<span class="s3">├── css</span>
+<span class="s3">│   ├── main.css</span>
+<span class="s3">│   └── normalize.css</span>
+<span class="s3">├── doc</span>
+<span class="s3">├── img</span>
+<span class="s3">├── js</span>
+<span class="s3">│   ├── main.js</span>
+<span class="s3">│   ├── plugins.js</span>
+<span class="s3">│   └── vendor</span>
+<span class="s3">│       ├── jquery.min.js</span>
+<span class="s3">│       └── modernizr.min.js</span>
+<span class="s3">├── .editorconfig</span>
+<span class="s3">├── .htaccess</span>
+<span class="s3">├── 404.html</span>
+<span class="s3">├── browserconfig.xml</span>
+<span class="s3">├── favicon.ico</span>
+<span class="s3">├── humans.txt</span>
+<span class="s3">├── icon.png</span>
+<span class="s3">├── index.html</span>
+<span class="s3">├── robots.txt</span>
+<span class="s3">├── site.webmanifest</span>
+<span class="s3">├── tile.png</span>
+<span class="s3">└── tile-wide.png</span>
+<span class="s3">```</span>
+
+<span class="s1">What follows is a general overview of each major part and how to use them.</span>
+
+<span class="s2">### </span><span class="s1">css</span>
+
+<span class="s1">This directory should contain all your project's CSS files. It includes some</span>
+<span class="s1">initial CSS to help get you started from a solid foundation. </span><span class="s0">[</span><span class="s1">About the</span>
+<span class="s1">CSS</span><span class="s0">](</span><span class="s1">css.md</span><span class="s0">)</span><span class="s1">.</span>
+
+<span class="s2">### </span><span class="s1">doc</span>
+
+<span class="s1">This directory contains all the HTML5 Boilerplate documentation. You can use it</span>
+<span class="s1">as the location and basis for your own project's documentation.</span>
+
+<span class="s2">### </span><span class="s1">js</span>
+
+<span class="s1">This directory should contain all your project's JS files. Libraries, plugins,</span>
+<span class="s1">and custom code can all be included here. It includes some initial JS to help</span>
+<span class="s1">get you started. </span><span class="s0">[</span><span class="s1">About the JavaScript</span><span class="s0">](</span><span class="s1">js.md</span><span class="s0">)</span><span class="s1">.</span>
+
+<span class="s2">### </span><span class="s1">.htaccess</span>
+
+<span class="s1">The default web server configs are for Apache. For more information, please</span>
+<span class="s1">refer to the </span><span class="s0">[</span><span class="s1">Apache Server Configs</span>
+<span class="s1">repository</span><span class="s0">](https://github.com/h5bp/server-configs-apache)</span><span class="s1">.</span>
+
+<span class="s1">Host your site on a server other than Apache? You're likely to find the</span>
+<span class="s1">corresponding server configs project listed in our </span><span class="s0">[</span><span class="s1">Server Configs</span>
+<span class="s0">](https://github.com/h5bp/server-configs/blob/master/README.md) </span><span class="s1">repository.</span>
+
+<span class="s2">### </span><span class="s1">404.html</span>
+
+<span class="s1">A helpful custom 404 to get you started.</span>
+
+<span class="s2">### </span><span class="s1">browserconfig.xml</span>
+
+<span class="s1">This file contains all settings regarding custom tiles for IE11 and Edge.</span>
+
+<span class="s1">For more info on this topic, please refer to</span>
+<span class="s0">[</span><span class="s1">Microsoft's Docs</span><span class="s0">](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85))</span><span class="s1">.</span>
+
+<span class="s2">### </span><span class="s1">.editorconfig</span>
+
+<span class="s1">The </span><span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">file is provided in order to encourage and help you and</span>
+<span class="s1">your team to maintain consistent coding styles between different</span>
+<span class="s1">editors and IDEs. </span><span class="s0">[</span><span class="s1">Read more about the </span><span class="s3">`</span><span class="s1">.editorconfig</span><span class="s3">` </span><span class="s1">file</span><span class="s0">](</span><span class="s1">misc.md#editorconfig</span><span class="s0">)</span><span class="s1">.</span>
+
+<span class="s2">### </span><span class="s1">index.html</span>
+
+<span class="s1">This is the default HTML skeleton that should form the basis of all pages on</span>
+<span class="s1">your site. If you are using a server-side templating framework, then you will</span>
+<span class="s1">need to integrate this starting HTML with your setup.</span>
+
+<span class="s1">Make sure that you update the URLs for the referenced CSS and JavaScript if you</span>
+<span class="s1">modify the directory structure at all.</span>
+
+<span class="s1">If you are using Google Universal Analytics, make sure that you edit the</span>
+<span class="s1">corresponding snippet at the bottom to include your analytics ID.</span>
+
+<span class="s2">### </span><span class="s1">humans.txt</span>
+
+<span class="s1">Edit this file to include the team that worked on your site/app, and the</span>
+<span class="s1">technology powering it.</span>
+
+<span class="s2">### </span><span class="s1">robots.txt</span>
+
+<span class="s1">Edit this file to include any pages you need hidden from search engines.</span>
+
+<span class="s2">### </span><span class="s1">Icons</span>
+
+<span class="s1">Replace the default </span><span class="s3">`</span><span class="s1">favicon.ico</span><span class="s3">`</span><span class="s1">, </span><span class="s3">`</span><span class="s1">tile.png</span><span class="s3">`</span><span class="s1">, </span><span class="s3">`</span><span class="s1">tile-wide.png</span><span class="s3">` </span><span class="s1">and Apple</span>
+<span class="s1">Touch Icon with your own.</span>
+
+<span class="s1">If you want to use different Apple Touch Icons for different resolutions please</span>
+<span class="s1">refer to the </span><span class="s0">[</span><span class="s1">according documentation</span><span class="s0">](</span><span class="s1">extend.md#apple-touch-icons</span><span class="s0">)</span><span class="s1">.</span>
+</pre>
+</body>
+</html>
